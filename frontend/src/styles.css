@@ -1,0 +1,12 @@
+@import url("app/components/pages/home/home.component.css");
+@import url("app/components/pages/skills/skills.component.css");
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    cursor: context-menu;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
