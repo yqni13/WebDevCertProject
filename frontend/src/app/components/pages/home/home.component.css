@@ -1,3 +1,37 @@
-#home-wrapper h1 {
-    color: red;
+#home-wrapper {
+    #home-container-left {
+        justify-content: center;
+        align-items: center;
+        #home-img-wrapper {
+            border: 2px solid var(--theme-body-text);
+            border-radius: 5px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                object-position: top;
+            }
+        }
+    }
+
+    #home-container-right {
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            width: 100%;
+            font-size: clamp(25px, 3.5vw, 50px);
+            margin-bottom: 5px;
+        }
+        h1 {
+            width: 100%;
+            font-weight: 300;
+            margin: 0;
+        }
+        #home-name {
+            font-size: clamp(70px, 9.5vw, 130px);
+        }
+        #home-title {
+            font-size: clamp(50px, 8vw, 100px);
+        }
+    }
 }

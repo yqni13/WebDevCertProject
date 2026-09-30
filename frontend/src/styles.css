@@ -1,5 +1,12 @@
 @import url("app/components/pages/home/home.component.css");
+@import url("app/components/pages/about/about.component.css");
 @import url("app/components/pages/skills/skills.component.css");
+@import url("stylesheets/media.css");
+
+
+:root {
+    --theme-body-text: #C2CBD3;
+}
 
 html {
     scrollbar-width: none;
@@ -9,4 +16,40 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #313851;
+    color: var(--theme-body-text);
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+section,
+div {
+    display: flex;
+}
+
+.primary-header {
+    background: linear-gradient(61deg,rgba(32, 140, 248, 1) 27%, rgba(235, 235, 235, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header {
+    font-size: clamp(40px, 8vw, 100px);
+    font-weight: 300;
+    text-align: center;
+}
+
+.section-wrapper {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
 }

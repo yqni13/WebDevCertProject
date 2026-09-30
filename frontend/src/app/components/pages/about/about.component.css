@@ -1,0 +1,22 @@
+#about-wrapper {
+    #about-p-wrapper {
+        flex-direction: column;
+        margin: 15px 0;
+        p {
+            display: flex;
+            font-size: 1em;
+            line-height: 1.5em;
+            margin: 7.5px 0;
+        }
+    }
+    #about-img-wrapper {
+        border: 2px solid var(--theme-body-text);
+        border-radius: 5px;
+        margin-top: 25px;
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
