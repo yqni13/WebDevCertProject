@@ -1,0 +1,33 @@
+#contact-wrapper {
+    #contact-form-wrapper {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+
+            input,
+            select {
+                text-overflow: ellipsis;
+                border: 2px outset var(--theme-body-text);
+                border-radius: 8px;
+                background-color: transparent;
+                color: var(--theme-body-text);
+                padding: 8px 4px;
+                margin: 0 0 15px 0;
+            }
+
+            #contact-submit {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                cursor: pointer;
+                &:hover {
+                    color: rgba(32, 140, 248, 1);
+                }
+            }
+        }
+    }
+}

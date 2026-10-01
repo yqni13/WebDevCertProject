@@ -1,7 +1,10 @@
+@import url("stylesheets/media.css");
+@import url("stylesheets/icons.css");
 @import url("app/components/pages/home/home.component.css");
 @import url("app/components/pages/about/about.component.css");
 @import url("app/components/pages/skills/skills.component.css");
-@import url("stylesheets/media.css");
+@import url("app/components/pages/experience/experience.component.css");
+@import url("app/components/pages/contact/contact.component.css");
 
 
 :root {
@@ -43,13 +46,13 @@ div {
 }
 
 .section-header {
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(35px, 8vw, 80px);
     font-weight: 300;
     text-align: center;
+    width: 100%;
 }
 
 .section-wrapper {
     width: 100vw;
-    height: 100vh;
     flex-direction: column;
 }

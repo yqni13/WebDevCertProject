@@ -1,0 +1,41 @@
+#experience-wrapper {
+    #experience-list-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #experience-orientation {
+            font-style: italic;
+            color: rgb(107, 107, 107);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 30px;
+
+                i {
+                    width: 25px;
+                    height: 25px;
+                    min-width: 25px;
+                    min-height: 25px;
+                }
+                .icon-Study {
+                    color: rgb(250, 182, 55);
+                }
+                .icon-Fight {
+                    color: rgb(180, 50, 50);
+                }
+                .icon-Adventure {
+                    color: rgb(17, 185, 54);
+                }
+                span {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+}

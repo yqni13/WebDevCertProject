@@ -1,7 +1,6 @@
 #home-wrapper {
     #home-container-left {
         justify-content: center;
-        align-items: center;
         #home-img-wrapper {
             border: 2px solid var(--theme-body-text);
             border-radius: 5px;

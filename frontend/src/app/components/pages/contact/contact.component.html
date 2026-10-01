@@ -1,0 +1,25 @@
+<div id="contact-wrapper" class="section-wrapper">
+    <h1 class="section-header primary-header">Send distress signal</h1>
+    <div id="contact-form-wrapper">
+        <form name="contactForm" id="contact-form">
+            <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <select id="contact-signal" name="signal" required>
+                <option value="" disabled selected>Select signal</option>
+                <hr>
+                <option value="Healing">Healing</option>
+                <option value="Fight">Fight</option>
+                <option value="Danger">Danger</option>
+                <option value="Software Development">Software Developer</option>
+            </select>
+
+            <button type="submit" id="contact-submit">Send</button>
+        </form>
+    </div>
+</div>
