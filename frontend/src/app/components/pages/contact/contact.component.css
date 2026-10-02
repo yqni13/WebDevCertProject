@@ -4,9 +4,10 @@
         align-items: center;
         height: 100%;
         form {
+            position: relative;
             display: flex;
             flex-direction: column;
-            width: 250px;
+            width: 250px; /* TODO(yqni13): adjust*/
 
             input,
             select {
@@ -27,6 +28,9 @@
                 &:hover {
                     color: rgba(32, 140, 248, 1);
                 }
+            }
+            .healing {
+                bottom: 0;
             }
         }
     }

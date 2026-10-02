@@ -1,4 +1,4 @@
-import { loadAllHtmlComponents } from "./app/Shared/Loader/loader.js";
+import { loadAllHtmlComponents } from "./app/shared/loader/loader.js";
 import { initAbout } from "./app/components/pages/about/about.component.js";
 import { Contact } from "./app/components/pages/contact/contact.component.js";
 import { initExperience } from "./app/components/pages/experience/experience.component.js";

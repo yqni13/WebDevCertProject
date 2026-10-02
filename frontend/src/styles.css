@@ -1,10 +1,16 @@
+/* special stylesheets */
 @import url("stylesheets/media.css");
 @import url("stylesheets/icons.css");
+
+/* page component stylesheets */
 @import url("app/components/pages/home/home.component.css");
 @import url("app/components/pages/about/about.component.css");
 @import url("app/components/pages/skills/skills.component.css");
 @import url("app/components/pages/experience/experience.component.css");
 @import url("app/components/pages/contact/contact.component.css");
+
+/* common component stylesheets */
+@import url("app/components/common/animation/healing/healing.component.css");
 
 
 :root {

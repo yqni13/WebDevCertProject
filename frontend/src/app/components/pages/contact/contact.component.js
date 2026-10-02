@@ -1,8 +1,9 @@
-import { loadTotalComponent } from "../../../Shared/Loader/loader";
+import { Healing } from "../../common/animation/healing/healing.component.js";
 
 export class Contact {
     constructor() {
         this.form = document.getElementById("contact-form");
+        this.healing = new Healing();
     }
     async init() {
         this.form.addEventListener('submit', async (event) => this.handleSubmit(event));
@@ -16,14 +17,17 @@ export class Contact {
         await this.execSignalEvent();
     }
 
-    async execSignalEvent() {        
+    async execSignalEvent() {
+        const name = this.form.elements["name"].value;
         const signal = this.form.elements["signal"].value;
+        const effectTime = 7500;
         switch(signal) {
             case "Healing": {
-                console.log("Signal: Healing");
-                let healing = await loadTotalComponent(document.querySelector('[data-component="healing"]'), 'healing');
-                healing.trigger();
-                setTimeout(() => { healing = "";}, 2000);
+                setTimeout(() => { 
+                    alert(`${name} was healed.`);
+                    this.resetForm();
+                }, effectTime);
+                await this.healing.play(document.getElementById('contact-form'), { duration: effectTime });
                 break;
             }
             case "Fight": {
@@ -59,5 +63,10 @@ export class Contact {
         }
 
         return true;
+    }
+
+    resetForm() {
+        this.form.elements["name"].value = "";
+        this.form.elements["signal"].value = "";
     }
 }
