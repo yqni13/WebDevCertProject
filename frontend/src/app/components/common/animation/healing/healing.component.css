@@ -1,4 +1,3 @@
-/* Ohne Framework gibt es keine Kapselung, deshalb Präfix "healing" für alle Klassen und Keyframes */
 .healing {
     position: absolute;
     left: 0;

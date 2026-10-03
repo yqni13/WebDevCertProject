@@ -11,6 +11,8 @@
 
 /* common component stylesheets */
 @import url("app/components/common/animation/healing/healing.component.css");
+@import url("app/components/common/animation/portal/portal.component.css");
+@import url("app/components/common/animation/destruction/destruction.component.css");
 
 
 :root {

@@ -2,24 +2,31 @@
     <h1 class="section-header primary-header">Send distress signal</h1>
     <div id="contact-form-wrapper">
         <form name="contactForm" id="contact-form">
+            <h2>I'm here to help you!</h2>
+            <h3>Call out the magician for a spell...</h3>
+            <label for="contact-name">Name</label>
             <input
                 type="text"
                 id="contact-name"
                 name="name"
-                placeholder="Enter your name"
+                placeholder="Tell me who you are"
                 required
             >
 
+            <label for="contact-signal">Signal</label>
             <select id="contact-signal" name="signal" required>
-                <option value="" disabled selected>Select signal</option>
+                <option value="" disabled selected>What's your situation?</option>
                 <hr>
                 <option value="Healing">Healing</option>
-                <option value="Fight">Fight</option>
+                <option value="Support">Support</option>
                 <option value="Danger">Danger</option>
                 <option value="Software Development">Software Developer</option>
             </select>
 
             <button type="submit" id="contact-submit">Send</button>
+            <div id="contact-form-bg">
+                <img src="assets/form_bg.jpg" alt="Form image failed to load.">
+            </div>
         </form>
     </div>
 </div>
