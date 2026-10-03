@@ -1,0 +1,28 @@
+<div id="skill-list" role="dialog" aria-modal="true" aria-labelledby="skill-list-title">
+    <button type="button" id="skill-list-close" aria-label="Close">
+        <i class="icon-base icon-Close"></i>
+    </button>
+
+    <div id="skill-list-wrapper">
+        <h1 id="skill-list-title"></h1>
+        <div id="skill-list-content"></div>
+    </div>
+
+    <template id="skill-category-template">
+        <section class="skill-category">
+            <h2 class="skill-category-title"></h2>
+            <div class="skill-entries"></div>
+        </section>
+    </template>
+
+    <template id="skill-entry-template">
+        <div class="skill-entry">
+            <div class="skill-icon"><i></i></div>
+            <div class="skill-data">
+                <h3 class="skill-data-name"></h3>
+                <h4 class="skill-data-level"></h4>
+                <span class="skill-data-description"></span>
+            </div>
+        </div>
+    </template>
+</div>

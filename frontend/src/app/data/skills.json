@@ -1,0 +1,98 @@
+{
+    "elemental": {
+        "darkness": [
+            {
+                "description": "Creates portal connecting two locations that the spellcaster can manifest in its mind.",
+                "icon": "icon-DarkGate",
+                "level": "*****",
+                "name": "Dark Gate"
+            }
+        ],
+        "earth": [
+            {
+                "description": "Spellcaster can reshape matter depending on focus, imagination and energy input.",
+                "icon": "icon-NaturalEngineering",
+                "level": "***",
+                "name": "Natural Engineering"
+            }
+        ],
+        "fire": [
+            {
+                "description": "Energy gets converted to a bundled mass of fire able to send flying until it impacts.",
+                "icon": "icon-Fireball",
+                "level": "*",
+                "name": "Fireball"
+            }
+        ],
+        "light": [
+            {
+                "description": "Every source of light can be converted to energy for the spellcaster to use.",
+                "icon": "icon-HeavensAuthority",
+                "level": "****",
+                "name": "Heavens Authority"
+            }
+        ],
+        "water": [
+            {
+                "description": "Spellbound subject can breath under water.",
+                "icon": "icon-PoseidonsGrace",
+                "level": "**",
+                "name": "Poseidons Grace"
+            },
+            {
+                "description": "Trap subject/object in rotating sphere of water while maintaining breathable inner void.",
+                "icon": "icon-RotaryCage",
+                "level": "*",
+                "name": "Rotary Cage"
+            }
+        ]
+    },
+    "enchantment": {
+        "mental": [
+            {
+                "description": "Enhance reflexes and boost brain output.",
+                "icon": "icon-FocusBoost",
+                "level": "**",
+                "name": "Focus Boost"
+            }
+        ],
+        "physical": [
+            {
+                "description": "Spellcaster can heal structural damage and replenish energy of subject/object.",
+                "icon": "icon-Heal",
+                "level": "*",
+                "name": "Heal"
+            },
+            {
+                "description": "Energy is constantly converted to regenerate spellcasters cells and heal status effects to a certain degree.",
+                "icon": "icon-AutonomousRegeneration",
+                "level": "*****",
+                "name": "Autonomous Regeneration"
+            },
+            {
+                "description": "Improve nervous system, bone density and muscle quality by converting large quantity of energy.",
+                "icon": "icon-PowerEnhancement",
+                "level": "***",
+                "name": "Power Enhancement"
+            }
+        ]
+    },
+    "illusion": {
+        "objective": [
+            {
+                "description": "Spellbound object or subject appears in different looks to each viewer.",
+                "icon": "icon-Anonymity",
+                "level": "****",
+                "name": "Anonymity"
+            }
+        ],
+        "subjective": [
+            {
+                "description": "Spellbound subject sees demons randomly appear as fearsome figures, fed and powered by their one energy.",
+                "icon": "icon-DemonWatch",
+                "level": "***",
+                "name": "Demon Watch"
+            }
+        ]
+    }
+}
