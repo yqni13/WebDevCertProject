@@ -6,10 +6,10 @@ export class Skills {
         this.skills = null;
     }
 
-    init() {
+    async init() {
         document.querySelectorAll('.skills-category').forEach((field) => {
-            field.addEventListener('click', () => {
-                this.openSkillTree(field.dataset.skill);
+            field.addEventListener('click', async () => {
+                await this.openSkillTree(field.dataset.skill);
             })
         })
     }

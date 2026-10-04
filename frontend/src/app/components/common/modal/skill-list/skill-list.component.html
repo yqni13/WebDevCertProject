@@ -4,8 +4,15 @@
     </button>
 
     <div id="skill-list-wrapper">
-        <h1 id="skill-list-title"></h1>
-        <div id="skill-list-content"></div>
+        <h1 id="skill-list-title" class="primary-header"></h1>
+        <div id="skill-list-hint-wrapper">
+            <span class="skill-list-hint-text">Spells rated from Easy</span>
+            <span class="skill-list-hint-rating">*</span>
+            <span class="skill-list-hint-text">to Legendary</span>
+            <span class="skill-list-hint-rating">* * * * *</span>
+        </div>
+        <div id="skill-list-content">
+        </div>
     </div>
 
     <template id="skill-category-template">
@@ -19,8 +26,10 @@
         <div class="skill-entry">
             <div class="skill-icon"><i></i></div>
             <div class="skill-data">
-                <h3 class="skill-data-name"></h3>
-                <h4 class="skill-data-level"></h4>
+                <div class="skill-data-wrapper">
+                    <h4 class="skill-data-level"></h4>
+                    <h3 class="skill-data-name"></h3>
+                </div>
                 <span class="skill-data-description"></span>
             </div>
         </div>

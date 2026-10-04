@@ -5,7 +5,7 @@ import { Skills } from "./app/components/pages/skills/skills.component.js";
 document.addEventListener('DOMContentLoaded', async () => {
     await loadAllHtmlComponents();
     const skills = new Skills();
-    skills.init();
+    await skills.init();
     const contact = new Contact();
     await contact.init();
 })

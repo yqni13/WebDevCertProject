@@ -4,15 +4,24 @@
             {
                 "description": "Creates portal connecting two locations that the spellcaster can manifest in its mind.",
                 "icon": "icon-DarkGate",
-                "level": "*****",
+                "color": "#7330ca",
+                "level": "* * * * *",
                 "name": "Dark Gate"
             }
         ],
         "earth": [
             {
+                "description": "Spellcaster can use energy to produce/regrow organic matter.",
+                "icon": "icon-Regrow",
+                "color": "#84ad71",
+                "level": "* * *",
+                "name": "Regrow"
+            },
+            {
                 "description": "Spellcaster can reshape matter depending on focus, imagination and energy input.",
                 "icon": "icon-NaturalEngineering",
-                "level": "***",
+                "color": "#774a2c",
+                "level": "* * * *",
                 "name": "Natural Engineering"
             }
         ],
@@ -20,39 +29,65 @@
             {
                 "description": "Energy gets converted to a bundled mass of fire able to send flying until it impacts.",
                 "icon": "icon-Fireball",
+                "color": "#ff7350",
                 "level": "*",
                 "name": "Fireball"
+            },
+            {
+                "description": "Spellcaster accumulates and converts energy from surroundings to release a destructive fire blast to the ground.",
+                "icon": "icon-Obliterate",
+                "color": "#db2323",
+                "level": "* * *",
+                "name": "Obliterate"
             }
         ],
         "light": [
             {
+                "description": "Spellcaster can purify evil intentions, heal status effects and dissolve lower evil creatures.",
+                "icon": "icon-Purify",
+                "color": "#ffe346",
+                "level": "* *",
+                "name": "Purify"
+            },
+            {
                 "description": "Every source of light can be converted to energy for the spellcaster to use.",
                 "icon": "icon-HeavensAuthority",
-                "level": "****",
+                "color": "#ffed9f",
+                "level": "* * * *",
                 "name": "Heavens Authority"
             }
         ],
         "water": [
             {
+                "description": "Trap subject/object in rotating sphere of water while maintaining breathable inner void.",
+                "icon": "icon-RotaryCage",
+                "color": "#5a72dd",
+                "level": "*",
+                "name": "Rotary Cage"
+            },
+            {
                 "description": "Spellbound subject can breath under water.",
                 "icon": "icon-PoseidonsGrace",
-                "level": "**",
+                "color": "#ddad28",
+                "level": "* *",
                 "name": "Poseidons Grace"
             },
             {
-                "description": "Trap subject/object in rotating sphere of water while maintaining breathable inner void.",
-                "icon": "icon-RotaryCage",
-                "level": "*",
-                "name": "Rotary Cage"
+                "description": "Spellcaster can convert every source of energy (in a certain area) to use as ice, reshape and control it.",
+                "icon": "icon-IceDomain",
+                "color": "#81dcf8",
+                "level": "* * * * *",
+                "name": "Ice Domain"
             }
         ]
     },
     "enchantment": {
         "mental": [
             {
-                "description": "Enhance reflexes and boost brain output.",
+                "description": "Spellcaster enhances own reflexes and boosts brain output.",
                 "icon": "icon-FocusBoost",
-                "level": "**",
+                "color": "#55a6f1",
+                "level": "* *",
                 "name": "Focus Boost"
             }
         ],
@@ -60,20 +95,23 @@
             {
                 "description": "Spellcaster can heal structural damage and replenish energy of subject/object.",
                 "icon": "icon-Heal",
+                "color": "#31ad31",
                 "level": "*",
                 "name": "Heal"
             },
             {
-                "description": "Energy is constantly converted to regenerate spellcasters cells and heal status effects to a certain degree.",
-                "icon": "icon-AutonomousRegeneration",
-                "level": "*****",
-                "name": "Autonomous Regeneration"
-            },
-            {
                 "description": "Improve nervous system, bone density and muscle quality by converting large quantity of energy.",
                 "icon": "icon-PowerEnhancement",
-                "level": "***",
+                "color": "#ffe550",
+                "level": "* * *",
                 "name": "Power Enhancement"
+            },
+            {
+                "description": "Energy from surroundings is constantly converted to regenerate spellcasters cells and heal status effects to a certain degree.",
+                "icon": "icon-AutonomousRegeneration",
+                "color": "#43c593",
+                "level": "* * * * *",
+                "name": "Autonomous Regeneration"
             }
         ]
     },
@@ -82,7 +120,8 @@
             {
                 "description": "Spellbound object or subject appears in different looks to each viewer.",
                 "icon": "icon-Anonymity",
-                "level": "****",
+                "color": "#9e9e9e",
+                "level": "* * * *",
                 "name": "Anonymity"
             }
         ],
@@ -90,7 +129,8 @@
             {
                 "description": "Spellbound subject sees demons randomly appear as fearsome figures, fed and powered by their one energy.",
                 "icon": "icon-DemonWatch",
-                "level": "***",
+                "color": "#ac5656",
+                "level": "* * *",
                 "name": "Demon Watch"
             }
         ]

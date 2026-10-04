@@ -1,4 +1,9 @@
 #skills-wrapper {
+    #skills-hint {
+        font-style: italic;
+        text-align: center;
+        font-size: clamp(14px, 1.5vw, 18px);
+    }
     #skills-category-wrapper {
         flex-direction: column;
         width: 100%;
