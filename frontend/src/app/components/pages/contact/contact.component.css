@@ -10,41 +10,36 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            width: calc(100% - (15px * 2)); /* TODO(yqni13): adjust*/
-            /* width: 250px; */
             border: 1px outset var(--theme-body-text);
-            border-radius: 15px;
-            padding: 15px;
-            /* background-image: url("../../../../assets/form_bg0.jpg");
-            background-position: center;
-            background-size: cover; */
+            border-radius: 20px;
             
             h2 {
-                font-weight: 300;
-                font-size: clamp(22px, 5vw, 44px);
                 margin: 0 0 7.5px 0;
             }
             h3 {
                 font-weight: 300;
-                font-size: clamp(14px, 3vw, 30px);
-                margin: 0 0 25px 0;
                 font-style: italic;
             }
             label {
                 margin-bottom: 5px;
+                font-weight: bold;
             }
             input,
             select {
                 text-overflow: ellipsis;
-                border: 2px outset var(--theme-body-text);
+                border: 1px outset var(--theme-body-text);
                 border-radius: 8px;
                 background-color: transparent;
+                backdrop-filter: blur(12px);
                 color: var(--theme-body-text);
                 padding: 8px 4px;
                 margin: 0 0 25px 0;
                 &::placeholder {
                     color: var(--theme-body-text);
                 }
+            }
+            input {
+                padding-left: 7.5px; /* Adapt to different padding of select due to option arrow. */
             }
 
             #contact-submit {
@@ -55,9 +50,11 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 padding: 7.5px 0;
-                background-color: var(--theme-body-text);
-                color: #A3826A;
-                border-radius: 5px;
+                background-color: transparent;
+                backdrop-filter: blur(8px);
+                color: var(--theme-body-text);
+                border-radius: 8px;
+                margin-top: 10px;
                 &:hover {
                     border: 2px solid var(--theme-body-text);
                     box-shadow: 2px 2px 12px var(--theme-body-text);
@@ -69,12 +66,12 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                border-radius: 15px;
                 z-index: -1;
                 img {
                     width: 100%;
                     object-fit: cover;
-                    border-radius: 15px;
+                    object-position: center;
+                    border-radius: 20px;
                     filter: blur(1px) contrast(0.55);
                 }
             }

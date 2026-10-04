@@ -20,6 +20,7 @@
     --theme-body-text: #C2CBD3;
     --theme-primary: #ffbb00;
     --theme-secondary: #996f4e;
+    --theme-grey: #808080;
 }
 
 html {
@@ -57,7 +58,7 @@ div {
 }
 
 .section-header {
-    font-size: clamp(35px, 8vw, 80px);
+    font-size: clamp(28px, 8vw, 80px);
     font-weight: 300;
     text-align: center;
     width: 100%;

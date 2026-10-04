@@ -5,7 +5,7 @@
         align-items: center;
         #experience-orientation {
             font-style: italic;
-            color: rgb(107, 107, 107);
+            color: var(--theme-secondary);
         }
         ul {
             list-style: none;
@@ -15,14 +15,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                margin-bottom: 30px;
 
-                i {
-                    width: 25px;
-                    height: 25px;
-                    min-width: 25px;
-                    min-height: 25px;
-                }
                 .icon-Study {
                     color: rgb(250, 182, 55);
                 }
@@ -32,8 +25,8 @@
                 .icon-Adventure {
                     color: rgb(17, 185, 54);
                 }
-                span {
-                    padding-left: 25px;
+                .experience-entry-wrapper {
+                    flex-direction: column;
                 }
             }
         }

@@ -1,0 +1,86 @@
+#skill-list {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto; /* scroll content but keeps background fixed */
+    z-index: 1000;
+    background: #2a2a2b;
+    flex-direction: column;
+    
+    #skill-list-close {
+        position: fixed;
+        backdrop-filter: blur(4px);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: none;
+        i {
+            color: var(--theme-body-text);
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    #skill-list-wrapper {
+        flex-direction: column;
+        h1 {
+            font-size: clamp(40px, 7vw, 70px);
+        }
+        #skill-list-hint-wrapper {
+            flex-direction: row;
+            .skill-list-hint-text,
+            .skill-list-hint-rating {
+                font-style: italic;
+                margin: 0 5px;
+            }
+            .skill-list-hint-rating {
+                color: var(--theme-primary);
+                min-width: fit-content;
+            }
+        }
+        #skill-list-content {
+            flex-direction: column;
+            .skill-category {
+                flex-direction: column;
+                margin: 0;
+                h2 {
+                    color: rgb(112, 112, 112);
+                    font-weight: 300;
+                    font-size: clamp(22px, 3.5vw, 40px);
+                    margin: 35px 0 10px 0;
+                    text-decoration-line: underline;
+                }
+                .skill-entries {
+                    flex-direction: column;
+                    .skill-entry {
+                        margin: 15px 0;
+                        .skill-icon {
+                            align-items: center;
+                        }
+                        .skill-data {
+                            flex-direction: column;
+                            h3, h4, span {
+                                margin: 2.5px 0;
+                            }
+                            h4 {
+                                color: var(--theme-primary);
+                                margin-right: 10px;
+                                min-width: fit-content;
+                            }
+                            span {
+                                font-style: italic;
+                                color: var(--theme-grey);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .skill-category-title {
+        text-transform: capitalize;
+    }
+}
