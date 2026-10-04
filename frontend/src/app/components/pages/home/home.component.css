@@ -1,5 +1,5 @@
 #home-wrapper {
-    #home-container-left {
+    #home-container-img {
         justify-content: center;
         #home-img-wrapper {
             border: 2px solid var(--theme-body-text);
@@ -13,24 +13,15 @@
         }
     }
 
-    #home-container-right {
+    #home-container-text {
         flex-direction: column;
-        justify-content: center;
         h2 {
             width: 100%;
-            font-size: clamp(25px, 3.5vw, 50px);
-            margin-bottom: 5px;
         }
         h1 {
             width: 100%;
             font-weight: 300;
             margin: 0;
-        }
-        #home-name {
-            font-size: clamp(70px, 9.5vw, 130px);
-        }
-        #home-title {
-            font-size: clamp(50px, 8vw, 100px);
         }
     }
 }

@@ -14,13 +14,16 @@
     }
     .section-wrapper {
         min-height: calc(100vh - (75px * 2));
-        height: fit-content;
         padding: 75px 0;
         margin: 0;
     }
     #home-wrapper {
         flex-direction: row;
-        #home-container-left {
+        /* Hero page to hold full height unless vertical offers too much space */
+        @media screen and (height >= 1000px) {
+            min-height: auto;
+        }
+        #home-container-img {
             width: 50%;
             height: 100%;
             align-items: center;
@@ -29,10 +32,21 @@
                 height: 75%;
             }
         }
-        #home-container-right {
+        #home-container-text {
             width: 50%;
             height: 100%;
             align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: clamp(25px, 3.3vw, 44px);
+                margin: 0 0 5px 2.5vw;
+            }
+            #home-name {
+                font-size: clamp(120px, 8.25vw, 140px);
+            }
+            #home-title {
+                font-size: clamp(86px, 5.75vw, 100px);
+            }
         }
     }
 }
@@ -46,13 +60,16 @@
     }
     .section-wrapper {
         min-height: calc(100vh - (50px * 2));
-        height: fit-content;
         padding: 50px 0;
         margin: 0;
     }
     #home-wrapper {
         flex-direction: row;
-        #home-container-left {
+        /* Hero page to hold full height unless vertical offers too much space */
+        @media screen and (height >= 1000px) {
+            min-height: auto;
+        }
+        #home-container-img {
             width: 50%;
             height: 100%;
             align-items: center;
@@ -61,11 +78,22 @@
                 height: 75%;
             }
         }
-        #home-container-right {
+        #home-container-text {
             width: 50%;
             height: 100%;
             align-items: center;
             text-align: start;
+            justify-content: center;
+            h2 {
+                font-size: clamp(25px, 3.3vw, 38px);
+                margin: 0 0 5px 3vw;
+            }
+            #home-name {
+                font-size: clamp(45px, 8.5vw, 122px);
+            }
+            #home-title {
+                font-size: clamp(30px, 6vw, 86px);
+            }
         }
     }
 }
@@ -79,34 +107,45 @@
         margin: 30px 0;
     }
     section {
-        margin: 0 30px;
+        margin: 0 40px;
     }
     .section-wrapper {
         min-height: calc(100vh - (30px * 2));
-        height: fit-content;
         padding: 30px 0;
         margin: 0;
     }
     #home-wrapper {
         flex-direction: column-reverse;
         height: 100vh;
-        #home-container-left {            
+        min-height: fit-content;
+        #home-container-img {            
             width: 100%;
-            height: 60%;
+            height: 70%;
             align-items: start;
             #home-img-wrapper {
                 width: 100%;
                 height: 85%;
             }
         }
-        #home-container-right {
+        #home-container-text {
             width: 100%;
-            height: 40%;
+            height: 30%;
+            min-height: fit-content;
             justify-content: end;
-            margin: 0;
+            margin: 0 0 25px 0;
             text-align: center;
             span {
                 text-transform: uppercase;
+            }
+            h2 {
+                font-size: clamp(25px, 6vw, 50px);
+                margin: 0 0 5px 0;
+            }
+            #home-name {
+                font-size: clamp(55px, 16vw, 130px);
+            }
+            #home-title {
+                font-size: clamp(40px, 12vw, 100px);
             }
         }
     }
@@ -120,8 +159,59 @@
             }
         }
     }
+    #skill-list {
+        #skill-list-close {
+            top: 20px;
+            right: 20px;
+        }
+        #skill-list-wrapper {
+            margin: 30px 40px;
+            #skill-list-content {
+                .skill-category {
+                    .skill-entries {
+                        .skill-entry {
+                            .skill-icon {
+                                margin-right: 25px;
+                                i {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
+/* support starts at 320px width */
 @media screen and (width <= 480px) {
-    
+    section {
+        margin: 0 30px;
+    }
+    #skill-list {
+        #skill-list-close {
+            top: 15px;
+            right: 15px;
+        }
+        #skill-list-wrapper {
+            margin: 30px;
+            #skill-list-content {
+                .skill-category {
+                    .skill-entries {
+                        .skill-entry {
+                            .skill-icon {
+                                margin-right: 15px;
+                                i {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
