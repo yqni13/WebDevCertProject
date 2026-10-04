@@ -4,9 +4,7 @@
         margin: 15px 0;
         p {
             display: flex;
-            font-size: 1em;
             line-height: 1.5em;
-            margin: 7.5px 0;
         }
     }
     #about-img-wrapper {

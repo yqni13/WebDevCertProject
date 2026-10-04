@@ -18,6 +18,8 @@
 
 :root {
     --theme-body-text: #C2CBD3;
+    --theme-primary: #ffbb00;
+    --theme-secondary: #996f4e;
 }
 
 html {
