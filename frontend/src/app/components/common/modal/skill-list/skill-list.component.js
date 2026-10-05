@@ -29,8 +29,9 @@ export class SkillList {
         try {
             this.host.querySelector('#skill-list-title').textContent = topic;
             this.host.querySelector('#skill-list-content').append(this.buildContent(skills));
-            this.host.querySelector('#skill-list-close')
-                .addEventListener('click', () => this.close());
+            this.host.querySelector('#skill-list-close-btn')
+            .addEventListener('click', () => this.close());
+
             document.addEventListener('keydown', this.onKeydown);
         } catch (error) {
             console.error('Failed to build skill list: ', error);

@@ -4,7 +4,10 @@
     left: 0;
     backdrop-filter: blur(2px);
     width: 100vw;
-    i {
+    z-index: 999;
+    #nav-menu-open-btn {
+        background-color: transparent;
+        border: none;
         color: var(--theme-text-body);
         &:hover {
             cursor: pointer;
@@ -18,14 +21,28 @@
     position: fixed;
     inset: 0;
     overflow-y: auto;
-    z-index: 1000;
+    z-index: 999;
     background-color: #1f1d1d;
-    #nav-menu-close {
+    #nav-menu-close-btn {
+        display: flex;
         position: absolute;
         top: 25px;
         right: 25px;
+        background-color: transparent;
+        border: none;
+        color: var(--theme-text-body);
+        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
+        margin: 0;
         &:hover {
             cursor: pointer;
+            color: white;
+        }
+        i {
+            --size: 40px;
+            width: var(--size);
+            height: var(--size);
         }
     }
     ul {
@@ -41,9 +58,11 @@
         li {
             margin: 25px 0;
             font-size: 1.75em;
-            color: var(--theme-primary);
             &:hover {
                 cursor: pointer;
+                text-decoration-line: underline;
+            }
+            &:focus {
                 text-decoration-line: underline;
             }
         }

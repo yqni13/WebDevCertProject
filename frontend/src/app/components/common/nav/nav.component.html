@@ -1,16 +1,18 @@
 <div id="nav-wrapper">
-    <i class="icon-base icon-BurgerMenu" id="nav-menu-open-btn"></i>
+    <button type="button" id="nav-menu-open-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu-full">
+        <i class="icon-base icon-BurgerMenu" aria-hidden="true"></i>
+    </button>
 </div>
 
-<div id="nav-menu-full">
-    <div id="nav-menu-close">
-        <i class="icon-base icon-Close" id="nav-menu-close-btn"></i>
-    </div>
+<div id="nav-menu-full" role="dialog" aria-modal="true" aria-label="nav menu">
+    <button type="button" id="nav-menu-close-btn" aria-label="Close menu">
+        <i class="icon-base icon-Close" aria-hidden="true"></i>
+    </button>
     <ul>
-        <li data-nav="home" class="nav-menu-li">Home</li>
-        <li data-nav="about" class="nav-menu-li">About</li>
-        <li data-nav="skills" class="nav-menu-li">Skills</li>
-        <li data-nav="experience" class="nav-menu-li">Experience</li>
-        <li data-nav="contact" class="nav-menu-li">Contact</li>
+        <li><a href="#home" data-nav="home" class="nav-menu-li primary-header">Home</a></li>
+        <li><a href="#about" data-nav="about" class="nav-menu-li primary-header">About</a></li>
+        <li><a href="#skills" data-nav="skills" class="nav-menu-li primary-header">Skills</a></li>
+        <li><a href="#experience" data-nav="experience" class="nav-menu-li primary-header">Experience</a></li>
+        <li><a href="#contact" data-nav="contact" class="nav-menu-li primary-header">Contact</a></li>
     </ul>
 </div>

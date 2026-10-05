@@ -10,7 +10,11 @@ export class Skills {
         document.querySelectorAll('.skills-category').forEach((field) => {
             field.addEventListener('click', async () => {
                 await this.openSkillTree(field.dataset.skill);
-            })
+            });
+            field.addEventListener('keydown', async (event) => {
+                if(event.key === 'Enter' || event.key === 'Space')
+                    await this.openSkillTree(field.dataset.skill);
+            });
         })
     }
 
