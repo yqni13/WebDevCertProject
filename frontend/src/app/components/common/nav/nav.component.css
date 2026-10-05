@@ -39,11 +39,6 @@
             cursor: pointer;
             color: white;
         }
-        i {
-            --size: 40px;
-            width: var(--size);
-            height: var(--size);
-        }
     }
     ul {
         display: flex;

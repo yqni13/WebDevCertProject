@@ -49,7 +49,7 @@ Type in your name, choose a signal and see what happens once you hit "SEND"!
 
 [frontend/src/index.html](frontend/src/index.html) - load main html elements, stylesheet and script<br>
 [frontend/src/style.css](frontend/src/styles.css) - load all other stylesheets and define stylings that affect the whole website<br>
-[frontend/src/script.js](frontend/src/script.js) - load all other html files and init respective script files
+[frontend/src/script.js](frontend/src/script.js) - load all other html files and init respective script files<br>
 [frontend/src/stylesheets/media.css](frontend/src/stylesheets/media.css) - responsive design<br>
 [frontend/src/app/components/common](frontend/src/app/components/common) - common components (nav, footer, animations, modal)
 [frontend/src/app/components/pages](frontend/src/app/components/pages) - page components (home, about, skills, experience, contact)
@@ -76,13 +76,13 @@ Here are the links to the artists:<br>
 
 ### $\textsf{\color{teal}Cross-browser testing}$
 
-<img src="docs/readme_icons/firefox_logo50.ico"> | <img src="docs/readme_icons/chrome_logo50.ico"> | <img src="docs/readme_icons/opera_logo50.ico"> | <img src="docs/readme_icons/edge_logo50.ico"> | <img src="docs/readme_icons/brave_logo50.ico">
-|:------:|:------:|:------:|:------:|:------:|
-|Firefox | Chrome | Opera  | Edge   | Brave  |
-|Yes*    | Yes    | Yes    | Yes    | Yes    |
+<img src="docs/readme_icons/brave_logo50.ico"> | <img src="docs/readme_icons/firefox_logo50.ico"> | <img src="docs/readme_icons/chrome_logo50.ico"> | <img src="docs/readme_icons/opera_logo50.ico"> | <img src="docs/readme_icons/edge_logo50.ico">
+|:------:|:-------:|:------:|:-----:|:------:|
+| Brave  | Firefox | Chrome | Opera | Edge   |
+| Yes    | Yes*    | Yes    | Yes   | Yes    |
 
 <br>
 
-*This browser has problems with some stylings.
+*This browser does not support some of the styles used on this web application.
 
 <br>
