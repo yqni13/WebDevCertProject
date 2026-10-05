@@ -3,6 +3,8 @@
 
 #### Coursera certificate basic web development project (simple portfolio using basic HTML/CSS/JavaScript). 
 
+### visit <a href="https://yqni13.github.io/WebDevCertProject/">HERE</a> live
+
 <br>
 
 ## 📑 $\textsf{\color{salmon}Exercise Information}$
