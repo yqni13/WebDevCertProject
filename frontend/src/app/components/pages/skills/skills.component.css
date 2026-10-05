@@ -9,6 +9,7 @@
         justify-content: stretch;
         .skills-category {
             position: relative;
+            border-radius: 5px;
             img {
                 width: calc(100% - (2px * 2));
                 object-fit: cover;
@@ -32,6 +33,9 @@
                 padding: 0;
                 color: #f0f4f7;
                 font-weight: 300;
+            }
+            &:hover {
+                box-shadow: 2px 2px 16px var(--theme-primary);
             }
         }
     }

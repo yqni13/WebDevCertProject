@@ -1,0 +1,23 @@
+#footer-wrapper {
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2929;
+    #love {
+        margin: 0 3px;
+        color: rgb(179, 45, 45);
+    }
+    #monster {
+        margin: 0 3px;
+    }
+    a {
+        text-decoration: none;
+        background: linear-gradient(160deg, #4E1066, #D82A67 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0 1px 0 10px;
+    }
+}

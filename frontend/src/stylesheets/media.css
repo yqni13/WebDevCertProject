@@ -17,11 +17,21 @@
         padding: 75px 0;
         margin: 0;
     }
+    #nav-wrapper {
+        height: 100px;
+        i {
+            --size: 50px;
+            width: var(--size);
+            height: var(--size);
+            margin: 25px 25px 25px auto;
+        }
+    }
     #home-wrapper {
         flex-direction: row;
-
+        
         /* Hero page to hold full height unless vertical offers too much space */
-        min-height: calc(100vh - (75px * 2));
+        padding: 0;
+        min-height: 100vh;
         @media screen and (height >= 1000px) {
             min-height: auto;
         }
@@ -182,6 +192,13 @@
             }
         }
     }
+    #footer-wrapper {
+        i, img {
+            --size: 50px;
+            width: var(--size);
+            height: var(--size);
+        }
+    }
     @media screen and (height >= 1000px) {
         #skills {
             max-height: 1000px;
@@ -202,17 +219,29 @@
         margin: 0 100px;
     }
     .section-wrapper {
+        --bufferNavMinusHeadMargin: calc(100px - 30px);
         min-height: calc(100% - (50px * 2));
-        padding: 50px 0;
+        padding: var(--bufferNavMinusHeadMargin) 0 50px 0;
         margin: 0;
+    }
+    #nav-wrapper {
+        height: 100px;
+        i {
+            --size: 50px;
+            width: var(--size);
+            height: var(--size);
+            margin: 25px 25px 25px auto;
+        }
     }
     #home-wrapper {        
         flex-direction: row;
 
         /* Hold full height (viewport) unless vertical offers too much space */
-        min-height: calc(100vh - (50px * 2));
+        padding: 0;
+        min-height: 100vh;
         @media screen and (height >= 1000px) {
             min-height: auto;
+            margin-top: 50px;
         }
 
         #home-container-img {
@@ -370,6 +399,13 @@
             }
         }
     }
+    #footer-wrapper {
+        i, img {
+            --size: 50px;
+            width: var(--size);
+            height: var(--size);
+        }
+    }
     @media screen and (height >= 1000px) {
         #skills {
             max-height: 1000px;
@@ -483,13 +519,24 @@
         margin: 0 40px;
     }
     .section-wrapper {
+        --bufferNavMinusHeadMargin: calc(60px - 30px);
         min-height: calc(100vh - (30px * 2));
-        padding: 30px 0;
+        padding: var(--bufferNavMinusHeadMargin) 0 30px 0;
         margin: 0;
+    }
+    #nav-wrapper {
+        height: 60px;
+        i {
+            --size: 40px;
+            width: var(--size);
+            height: var(--size);
+            margin: 10px 25px 10px auto;
+        }
     }
     #home-wrapper {
         flex-direction: column-reverse;
-        height: 100vh;
+        margin-top: 76px; /* Add to prevent navbar (with blur) to cut in. */
+        height: calc(100vh - 76px);
         min-height: fit-content;
         #home-container-img {            
             width: 100%;
@@ -611,6 +658,13 @@
                     font-size: clamp(1.6em, 5.3vw, 1.8em);
                 }
             }
+        }
+    }
+    #footer-wrapper {
+        i, img {
+            --size: 40px;
+            width: var(--size);
+            height: var(--size);
         }
     }
 }
